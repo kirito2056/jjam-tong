@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <form action="http://localhost:8082/ocr/process" method="post" enctype="application/octet-stream">
-        <input type="file" id="image" name="image">
-        <input type="Long" id="user_id" name="user_id">
-        <input type="String" id="ocr_text" name="ocr_text">
+    <form action="http://localhost:8082/ocr/process" method="post">
         <input type="String" id="ocr_cas" name="ocr_cas">
+        <input type="String" id="ocr_text" name="ocr_text">
         <input type="String" id="ocr_un" name="ocr_un">
+        <input type="Long" id="requestUserId" name="requestUserId">
         <button type="submit">보내기</button>
     </form>
 </body>
